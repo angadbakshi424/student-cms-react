@@ -1,9 +1,9 @@
-function StudentCard() {
+function StudentCard({ name, course, gpa }) {
   return (
     <div>
-      <h3>Aarav Sharma</h3>
-      <p>Course: React Native</p>
-      <p>GPA: 8.4</p>
+      <h3>{name}</h3>
+      <p>Course: {course}</p>
+      <p>GPA: {gpa}</p>
     </div>
   );
 }

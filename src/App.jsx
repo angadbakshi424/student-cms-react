@@ -5,7 +5,11 @@ function App() {
   return (
     <>
       <Header />
-      <StudentCard />
+      <StudentCard 
+        name="Aarav Sharma"
+        course="React Native"
+        gpa={8.4}
+      />
     </>
   );
 }
