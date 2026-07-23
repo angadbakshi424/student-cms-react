@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import StudentCard from "./components/StudentCard";
+import students from "./data/students.json";
 
 function App() {
   return (
