@@ -1,17 +1,22 @@
-import Header from "./components/Header";
-import StudentCard from "./components/StudentCard";
+import "./App.css";
+
 import students from "./data/students.json";
+
+import Header from "./components/Header";
+import StudentList from "./components/StudentList";
+import StatsDashboard from "./components/StatsDashboard";
 
 function App() {
   return (
-    <>
+    <div className="container">
+
       <Header />
-      <StudentCard 
-        name="Aarav Sharma"
-        course="React Native"
-        gpa={8.4}
-      />
-    </>
+
+      <StatsDashboard students={students} />
+
+      <StudentList students={students} />
+
+    </div>
   );
 }
 
