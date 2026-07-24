@@ -1,6 +1,10 @@
 import StudentCard from "./StudentCard";
 
 function StudentList({ students }) {
+  if (students.length === 0) {
+    return <h2>No students found</h2>;
+  }
+
   return (
     <div>
       {students.map((student) => (
